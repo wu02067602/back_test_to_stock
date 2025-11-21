@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backtest-controller"
+version = "0.1.0"
+description = "CLI controller for orchestrating stock backtest data summaries"
+authors = [{ name = "Cursor User" }]
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["backtest", "stocks", "controller"]
+dependencies = []
+
+[project.scripts]
+run-controller = "backtest.main:main"
